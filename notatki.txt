@@ -1,0 +1,6 @@
+czcionki
+teks inside news 'Syne Mono'
+logo 'New Tegomin'
+menu 'Yanone Kaffeesatz'
+
+hero 'New Tegomin'
