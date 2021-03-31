@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=New+Tegomin&family=Syne+Mono&display=swap");
+:root {
+  --primary-color: #A151B9;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: 'Syne Mono';
+  margin: 0;
+}
+
+.navbar {
+  background-color: #2c2c4b;
+  padding: 1em;
+}
+
+.navbar .logo {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'New Tegomin';
+  font-size: 36px;
+  color: white;
+}
+
+.navbar .logo span {
+  color: var(--primary-color);
+}
+
+.navbar nav {
+  display: none;
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: space-between;
+}
+
+.navbar .mobile-menu {
+  cursor: pointer;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+.hero {
+  text-align: center;
+  font-family: 'New Tegomin';
+}
+
+.left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 0.2em;
+}
+
+.left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
+}
+
+.left-col h1 span {
+  color: #A151B9;
+}
+
+.left-col h1 a {
+  text-decoration: none;
+}
+
+.left-col .primary-cta {
+  background-color: var(--primary-color);
+  color: black;
+  text-decoration: none;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  font-family: 'Syne Mono';
+  font-weight: bold;
+  display: inline-block;
+}
+
+.left-col .watch-video-cta {
+  display: block;
+  color: black;
+  margin-top: 1em;
+  font-size: 22px;
+}
+
+.left-col .video-play-btn {
+  margin: .2em;
+  width: 4%;
+}
+
+.hero-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+section.aboutus-section {
+  background-color: #2c2c4b;
+  color: white;
+}
+
+.borderaboutus img {
+  width: 90%;
+  height: 90%;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin-top: 1.5em;
+}
+
+ul.aboutus-list {
+  margin: 0;
+  padding-left: .1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(19rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+ul.aboutus-list li {
+  font-size: 40px;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+ul.aboutus-list li a {
+  text-decoration: none;
+  padding-left: 1.5em;
+  font-family: 'Amatic SC';
+  color: white;
+}
+
+ul.aboutus-list li a span {
+  color: var(--primary-color);
+}
+
+ul.aboutus-list li:before {
+  content: '';
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  background-image: url(../images/wwwico.svg);
+  background-size: contain;
+  margin-right: .5em;
+}
+
+.design12 {
+  display: none;
+  width: 75%;
+}
+
+.chatboximg {
+  width: 75%;
+}
+
+section.news-section {
+  background-color: #f2f2f2;
+}
+
+section.news-section ul li {
+  background-color: #A151B9;
+  text-align: center;
+  padding: 2em 1em;
+  width: 80%;
+  margin: 0 auto 5em auto;
+  border-radius: 2em;
+}
+
+section.news-section ul li img {
+  width: 7em;
+  height: 7em;
+  border: 5px solid #490C5B;
+  border-radius: 50%;
+  margin-top: -4.5em;
+}
+
+h2 {
+  font-size: 2em;
+  font-family: 'New Tegomin';
+  text-align: center;
+}
+
+.container4 {
+  background-color: #f2f2f2;
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: .5em;
+  font-family: 'New Tegomin';
+}
+
+input, textarea {
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  margin-bottom: 5em;
+  border-radius: 5em;
+  display: inline-block;
+  padding: .8em 2em;
+  width: unset;
+  cursor: pointer;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.mobile-menu {
+  display: block;
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 60%;
+  right: 0;
+  top: 0;
+  background-color: #2c2c4b;
+  height: 100vh;
+  padding: 1em;
+}
+
+nav ul.primary-nav {
+  margin-top: 5em;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: .5em;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 180px auto;
+        grid-template-columns: 180px auto;
+  }
+  .navbar nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar nav a {
+    color: white;
+    font-size: .7em;
+    padding: .4em .5em;
+    font-family: 'New Tegomin';
+  }
+  .navbar nav a span {
+    color: var(--primary-color);
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.current a {
+    font-weight: bolder;
+    color: black;
+  }
+  .navbar nav li.go-pro-cta {
+    color: black;
+    background: var(--primary-color);
+    border: 3px solid black;
+    border-radius: 5em;
+  }
+  .navbar nav li.go-pro-cta a {
+    color: black;
+    font-weight: bold;
+    font-family: 'Syne Mono';
+  }
+  .navbar nav li.go-pro-cta:hover {
+    background: black;
+    border: 3px solid var(--primary-color);
+  }
+  .navbar nav li.go-pro-cta:hover a {
+    color: var(--primary-color);
+  }
+}
+
+.hero img {
+  width: 50%;
+}
+
+.borderaboutus {
+  margin: 1em;
+  padding: 1em;
+}
+
+.borderaboutus .avatar-aboutus {
+  width: 75%;
+  height: 75%;
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  section {
+    padding: 8em 4em;
+  }
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+.hero .container .left-col {
+  margin: 3em 3em 0 5em;
+}
+
+.hero .container .hero-img {
+  width: 30%;
+  margin-right: 8em;
+}
+
+.hero .container .hero-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .container .hero-cta img {
+  width: 10%;
+  margin-left: .5em;
+}
+
+.hero .container .hero-cta .watch-video-cta {
+  margin-left: .5em;
+}
+
+.container2 {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.container2 .avatar-aboutus {
+  width: 90%;
+  height: 90%;
+}
+
+.container2 .myprojects img {
+  width: 20%;
+}
+
+.container2 img {
+  height: 50%;
+}
+
+.news-section {
+  position: relative;
+}
+
+.news-section .container3 {
+  background: #f2f2f2;
+}
+
+.news-section .container3 .design123 {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 350px;
+  bottom: -2em;
+}
+
+.news-section .container3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news-section .container3 ul li {
+  margin: 0 1em;
+}
+
+.contact-section {
+  position: relative;
+}
+
+.contact-section .container4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+}
+
+.contact-right iframe {
+  height: 75%;
+}
+
+@media only screen and (min-width: 1450px) {
+  .aboutus-section:before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: var(--primary-color);
+    left: 0;
+    top: 40em;
+  }
+  .aboutus-section:after {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 20em;
+    background: url(../images/video-play.svg);
+    left: 4.5em;
+    top: 41em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
